@@ -70,4 +70,29 @@ let numbers = [10, 20, 30];
 [numbers[1], numbers[2]] = [numbers[2], numbers[1]]
 console.log(numbers) // [10, 30, 20] 
 
+// ES2015 Refactoring
+// In this exercise, you’ll refactor some ES5 code into ES2015.
 
+// ES5 Assigning Variables to Object Properties
+var obj = {
+  numbers: {
+    a: 1,
+    b: 2
+  }
+};
+
+var a = obj.numbers.a;
+var b = obj.numbers.b;
+
+// ES2015 Object Destructuring
+/* Write an ES2015 Version */
+
+const obj = {
+  numbers: {
+    a: 1, 
+    b: 2
+  }
+}
+const {a, b} = obj.numbers 
+
+// ES5 Array Swap
